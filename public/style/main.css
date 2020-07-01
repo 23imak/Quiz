@@ -1,0 +1,138 @@
+/* Stellar - blue gradient - background: linear-gradient(to right, #7474bf, #348ac7); */
+/* Dimigo - Red gradient - background: linear-gradient(to right, #ec008c, #fc6767); */
+/* Intuitive - Purple gradient - background: linear-gradient(to right, #da22ff, #9733ee); */
+/* Dull - White gradient - background: linear-gradient(to right, #c9d6ff, #e2e2e2); */
+/* $tart-orange: #f04b42ff;
+$bleu-de-france: #0083e0ff;
+$minion-yellow: #fee648ff;
+$orchid: #dc56dcff;
+$green-ryb: #6ab547ff; */
+
+body {
+    background-image: url(/resources/abstract-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px #ccc;
+    background: linear-gradient(to right, #e6e7e9, #c9d6ff);
+}
+
+.header .brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .brand .logo {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.header .brand .header-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.header .action-items .logout {
+    background-color: #252525;
+}
+
+.header .action-items .user-name {
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    vertical-align: middle;
+}
+
+.categories-container {
+    padding: 30px 0;
+}
+
+.categories-container .head-text {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.category {
+    margin: 20px;
+    padding: 15px;
+    min-height: 300px;
+    color: #fff;
+    box-shadow: 0 0 5px #666;
+    border-radius: 10px;
+    position: relative;
+}
+
+.category.math {
+    background-color: #f04b42;
+}
+
+.category.english {
+    background-color: #0083e0;
+}
+
+.category.computers {
+    background-color: #FF88DC;
+}
+
+.category.science {
+    background-color: #FECB34;
+}
+
+.category.gk {
+    background-color: #01DF69;
+}
+
+
+.category .description {
+    margin-top: 10px;
+    max-height: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.category .btn {
+    background: transparent;
+    border: 0px;
+    transition: none;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    outline: none;
+    box-shadow: none;
+}
+
+.category .btn:hover,
+.category .btn:active,
+.category .btn:active:focus,
+.category .btn:focus:hover,
+.category .btn:hover:active {
+    background-color: #fff;
+    color: #00a2e0;
+    border: 1px solid #fff;
+}
+
+.category .category-item {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.category .category-item .category-icon {
+    height: 70px;
+}
+
+.category .category-item .category-name {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+    vertical-align: middle;
+}

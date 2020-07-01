@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quizzard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/main.css" />
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='js/fireBase.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/categories.js'></script>
+</head>
+
+<body>
+    <section class="header">
+        <div class="brand">
+            <img src="./resources/logo-icon.jpg" class="logo" alt="logo" />
+            <h2 class="header-text">Welcome to the Quiz</h2>
+        </div>
+        <div class="action-items">
+            <span class="user-name"></span>
+            <button class="btn btn-secondary logout" onclick="mainApp.logOut()" title="Logout">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </button>
+        </div>
+    </section>
+    <section class="categories-container container-md">
+        <h1 class="head-text">Choose a category</h1>
+        <div class="row no-gutters">
+            <div class="col-sm col-md-4">
+                <div class="category math">
+                    <div class="category-item">
+                        <img src="./resources/Math-icon.png" class="category-icon" alt="Math icon" />
+                        <span class="category-name">Math</span>
+                    </div>
+                    <p class="description">This is the category description</p>
+                    <button value="maths" class="btn btn-primary category-icon" onclick="mainApp.createQuestionsArray('maths')">Start quiz</button>
+                </div>
+            </div>
+            <div class="col-sm col-md-4">
+                <div class="category english">
+                    <div class="category-item">
+                        <img src="./resources/english-icon.png" class="category-icon" alt="English icon" />
+                        <span class="category-name">English</span>
+                    </div>
+                    <p class="description">This is the category description</p>
+                    <button value="english" class="btn btn-primary category-icon" onclick="mainApp.createQuestionsArray('english')">Start quiz</button>
+                </div>
+            </div>
+            <div class="col-sm col-md-4">
+                <div class="category computers">
+                    <div class="category-item">
+                        <img src="./resources/computer-icon.png" class="category-icon" alt="Computers icon" />
+                        <span class="category-name">Computers</span>
+                    </div>
+                    <p class="description">This is the category description</p>
+                    <button id="computers" class="btn btn-primary category-icon" onclick='mainApp.createQuestionsArray("computers")'>Start quiz</button>
+                </div>
+            </div>
+            <div class="col-sm col-md-4">
+                <div class="category science">
+                    <div class="category-item">
+                        <img src="./resources/science-icon.png" class="category-icon" alt="Science icon" />
+                        <span class="category-name">Science</span>
+                    </div>
+                    <p class="description">This is the category description</p>
+                    <button value="science" class="btn btn-primary category-icon" onclick="mainApp.createQuestionsArray('science')">Start quiz</button>
+                </div>
+            </div>
+            <div class="col-sm col-md-4">
+                <div class="category gk">
+                    <div class="category-item">
+                        <img src="./resources/earth-icon-vector.png" class="category-icon"
+                            alt="General knowledge icon" />
+                        <span class="category-name">General knowledge</span>
+                    </div>
+                    <p class="description">This is the category description</p>
+                    <button value="gk" class="btn btn-primary category-icon" onclick="mainApp.createQuestionsArray('science')">Start quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</body>
+
+</html>
